@@ -125,11 +125,11 @@ class SSIMTests(chex.TestCase, absltest.TestCase):
           ssim_fn = self.variant(
               functools.partial(
                   metrics.ssim,
-                  max_val=max_val,
-                  filter_size=filter_size,
-                  filter_sigma=filter_sigma,
-                  k1=k1,
-                  k2=k2,
+                  max_val=max_val,  # pyrefly: ignore[bad-argument-type]
+                  filter_size=filter_size,  # pyrefly: ignore[bad-argument-type]
+                  filter_sigma=filter_sigma,  # pyrefly: ignore[bad-argument-type]
+                  k1=k1,  # pyrefly: ignore[bad-argument-type]
+                  k2=k2,  # pyrefly: ignore[bad-argument-type]
                   return_map=return_map,
               )
           )
